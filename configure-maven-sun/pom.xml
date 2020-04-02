@@ -1,0 +1,48 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.candledrums.maven</groupId>
+		<artifactId>configure</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
+	<artifactId>configure-maven-sun</artifactId>
+	<packaging>pom</packaging>
+	<name>configure-maven-sun</name>
+	<description>com.sun 依赖</description>
+	<!-- 版本配置 -->
+	<properties>
+		<javax.mail.version>1.5.6</javax.mail.version>
+		<jersey.common.version>2.29.1</jersey.common.version>
+	</properties>
+	<dependencyManagement>
+		<dependencies>
+			<!-- https://mvnrepository.com/artifact/com.sun.mail/javax.mail -->
+			<dependency>
+				<groupId>com.sun.mail</groupId>
+				<artifactId>javax.mail</artifactId>
+				<version>${javax.mail.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.sun.mail/smtp -->
+			<dependency>
+				<groupId>com.sun.mail</groupId>
+				<artifactId>smtp</artifactId>
+				<version>${javax.mail.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.sun.mail/pop3 -->
+			<dependency>
+				<groupId>com.sun.mail</groupId>
+				<artifactId>pop3</artifactId>
+				<version>${javax.mail.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/org.glassfish.jersey.core/jersey-common -->
+			<dependency>
+				<groupId>org.glassfish.jersey.core</groupId>
+				<artifactId>jersey-common</artifactId>
+				<version>${jersey.common.version}</version>
+			</dependency>
+
+		</dependencies>
+	</dependencyManagement>
+</project>

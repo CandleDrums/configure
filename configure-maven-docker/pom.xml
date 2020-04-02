@@ -1,0 +1,27 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.candledrums.maven</groupId>
+		<artifactId>configure</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
+	<artifactId>configure-maven-docker</artifactId>
+	<packaging>pom</packaging>
+	<name>configure-maven-docker</name>
+	<description>docker配置</description>
+	<!-- 版本配置 -->
+	<properties>
+		<docker.version>3.0.1</docker.version>
+	</properties>
+	<dependencyManagement>
+		<dependencies>
+			<!-- https://mvnrepository.com/artifact/com.github.docker-java/docker-java -->
+			<dependency>
+				<groupId>com.github.docker-java</groupId>
+				<artifactId>docker-java</artifactId>
+				<version>${docker.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+</project>

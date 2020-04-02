@@ -1,0 +1,60 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.candledrums.maven</groupId>
+		<artifactId>configure</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
+	<artifactId>configure-maven-tools</artifactId>
+	<packaging>pom</packaging>
+	<name>configure-maven-tools</name>
+	<description>工具集合</description>
+	<!-- 版本配置 -->
+	<properties>
+		<dozer.version>5.5.1</dozer.version>
+		<reflections.spring.version>0.9.9-RC1</reflections.spring.version>
+		<reflections.version>0.9.11</reflections.version>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<!-- https://mvnrepository.com/artifact/net.sf.dozer/dozer -->
+			<dependency>
+				<groupId>net.sf.dozer</groupId>
+				<artifactId>dozer</artifactId>
+				<version>${dozer.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/net.sf.dozer/dozer-spring -->
+			<dependency>
+				<groupId>net.sf.dozer</groupId>
+				<artifactId>dozer-spring</artifactId>
+				<version>${dozer.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.reflections</groupId>
+				<artifactId>reflections-spring</artifactId>
+				<version>${reflections.spring.version}</version>
+				<exclusions>
+					<exclusion>
+						<groupId>javassist</groupId>
+						<artifactId>javassist</artifactId>
+					</exclusion>
+				</exclusions>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/org.reflections/reflections -->
+			<dependency>
+				<groupId>org.reflections</groupId>
+				<artifactId>reflections</artifactId>
+				<version>${reflections.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/org.reflections/reflections-maven -->
+			<dependency>
+				<groupId>org.reflections</groupId>
+				<artifactId>reflections-maven</artifactId>
+				<version>${reflections.spring.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+</project>

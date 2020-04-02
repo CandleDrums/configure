@@ -1,0 +1,50 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.candledrums.maven</groupId>
+	<artifactId>configure</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>configure</name>
+	<description>maven pom文件配置</description>
+
+	<modules>
+		<module>configure-maven-spring</module>
+		<module>configure-maven-javax</module>
+		<module>configure-maven-hibernate</module>
+		<module>configure-maven-dubbo</module>
+		<module>configure-maven-resteasy</module>
+		<module>configure-maven-pools</module>
+		<module>configure-maven-slf4j</module>
+		<module>configure-maven-javassist</module>
+		<module>configure-maven-docker</module>
+		<module>configure-maven-tools</module>
+		<module>configure-maven-commons</module>
+		<module>configure-maven-log4j</module>
+		<module>configure-maven-poi</module>
+		<module>configure-maven-validation</module>
+		<module>configure-maven-jackson</module>
+		<module>configure-maven-mongodb</module>
+		<module>configure-maven-sun</module>
+		<module>configure-maven-spring-data</module>
+		<module>configure-maven-spring-boot</module>
+		<module>configure-maven-spring-session</module>
+		<module>configure-maven-hikari</module>
+		<module>configure-maven-mysql</module>
+		<module>configure-maven-http</module>
+		<module>configure-maven-mybatis</module>
+		<module>configure-maven-dom</module>
+		<module>configure-maven-spring-cloud</module>
+		<module>configure-maven-redis</module>
+		<module>configure-maven-lombok</module>
+		<module>configure-maven-plugin</module>
+		<module>configure-maven-springfox</module>
+		<module>configure-maven-logstash</module>
+		<module>configure-maven-git</module>
+		<module>configure-maven-guava</module>
+		<module>configure-maven-starter</module>
+		<module>configure-maven-google</module>
+		<module>configure-maven-alibaba</module>
+	</modules>
+</project>

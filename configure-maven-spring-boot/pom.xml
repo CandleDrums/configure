@@ -12,10 +12,7 @@
 	<name>configure-maven-spring-boot</name>
 	<!-- 版本配置 -->
 	<properties>
-		<spring.boot.version>1.5.9.RELEASE</spring.boot.version>
-		<spring.boot.starter.netflix.hystrix.version>1.4.7.RELEASE</spring.boot.starter.netflix.hystrix.version>
-		<spring.boot.starter.velocity.version>1.4.7.RELEASE</spring.boot.starter.velocity.version>
-		<nekohtml.version>1.9.22</nekohtml.version>
+		<spring.boot.version>2.2.6.RELEASE</spring.boot.version>
 	</properties>
 
 	<dependencyManagement>
@@ -316,11 +313,6 @@
 				<artifactId>spring-boot-starter-thymeleaf</artifactId>
 				<version>${spring.boot.version}</version>
 			</dependency>
-			<!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-netflix-hystrix -->
-			<dependency>
-				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
-				<version>${spring.boot.starter.netflix.hystrix.version}</version>
 			</dependency>
 			<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-test -->
 			<dependency>
@@ -328,12 +320,6 @@
 				<artifactId>spring-boot-starter-test</artifactId>
 				<version>${spring.boot.version}</version>
 				<scope>test</scope>
-			</dependency>
-			<!-- https://mvnrepository.com/artifact/net.sourceforge.nekohtml/nekohtml -->
-			<dependency>
-				<groupId>net.sourceforge.nekohtml</groupId>
-				<artifactId>nekohtml</artifactId>
-				<version>${nekohtml.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>

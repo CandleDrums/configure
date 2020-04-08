@@ -12,7 +12,7 @@
 	<name>configure-maven-spring-boot</name>
 	<!-- 版本配置 -->
 	<properties>
-		<spring.boot.version>2.2.6.RELEASE</spring.boot.version>
+		<spring.boot.version>2.2.2.RELEASE</spring.boot.version>
 	</properties>
 
 	<dependencyManagement>
@@ -313,7 +313,6 @@
 				<artifactId>spring-boot-starter-thymeleaf</artifactId>
 				<version>${spring.boot.version}</version>
 			</dependency>
-			</dependency>
 			<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-test -->
 			<dependency>
 				<groupId>org.springframework.boot</groupId>
@@ -321,6 +320,19 @@
 				<version>${spring.boot.version}</version>
 				<scope>test</scope>
 			</dependency>
+			<!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-openfeign -->
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-starter-openfeign</artifactId>
+				<version>${spring.boot.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-consul-discovery -->
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-starter-consul-discovery</artifactId>
+				<version>2.2.2.RELEASE</version>
+			</dependency>
+
 		</dependencies>
 	</dependencyManagement>
 </project>

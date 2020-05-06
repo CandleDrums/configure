@@ -13,6 +13,7 @@
 	<!-- 版本配置 -->
 	<properties>
 		<springfox.swagger2.version>2.9.2</springfox.swagger2.version>
+		<knife4j.version>2.0.2</knife4j.version>
 	</properties>
 
 	<dependencyManagement>
@@ -28,6 +29,11 @@
 				<groupId>io.springfox</groupId>
 				<artifactId>springfox-swagger-ui</artifactId>
 				<version>${springfox.swagger2.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.github.xiaoymin</groupId>
+				<artifactId>knife4j-spring-boot-starter</artifactId>
+				<version>${knife4j.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>

@@ -13,6 +13,9 @@
 	<description>spring data配置</description>
 	<!-- 版本配置 -->
 	<properties>
+		<spring.data.redis.version>2.3.0.RELEASE</spring.data.redis.version>
+		<spring.data.common.version>2.3.0.RELEASE</spring.data.common.version>
+
 	</properties>
 
 	<dependencyManagement>
@@ -21,7 +24,7 @@
 			<dependency>
 				<groupId>org.springframework.data</groupId>
 				<artifactId>spring-data-commons</artifactId>
-				<version>1.13.23.RELEASE</version>
+				<version>${spring.data.common.version}</version>
 			</dependency>
 
 			<!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-commons-core -->
@@ -41,12 +44,8 @@
 			<dependency>
 				<groupId>org.springframework.data</groupId>
 				<artifactId>spring-data-redis</artifactId>
-				<version>1.8.23.RELEASE</version>
+				<version>${spring.data.redis.version}</version>
 			</dependency>
-
-
-
-
 		</dependencies>
 	</dependencyManagement>
 </project>

@@ -12,8 +12,8 @@
 	<description>jackson配置</description>
 	<!-- 版本配置 -->
 	<properties>
-		<jackson.version>2.9.5</jackson.version>
-		<fastjson.version>1.2.46</fastjson.version>
+		<jackson.version>2.11.0</jackson.version>
+		<fastjson.version>1.2.68</fastjson.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>

@@ -13,7 +13,6 @@
 		<module>configure-maven-spring</module>
 		<module>configure-maven-javax</module>
 		<module>configure-maven-hibernate</module>
-		<module>configure-maven-dubbo</module>
 		<module>configure-maven-resteasy</module>
 		<module>configure-maven-pools</module>
 		<module>configure-maven-slf4j</module>

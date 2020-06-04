@@ -46,5 +46,6 @@
 		<module>configure-maven-google</module>
 		<module>configure-maven-alibaba</module>
 		<module>configure-maven-test</module>
+		<module>configure-maven-sqlite</module>
 	</modules>
 </project>

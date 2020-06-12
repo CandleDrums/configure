@@ -47,5 +47,6 @@
 		<module>configure-maven-alibaba</module>
 		<module>configure-maven-test</module>
 		<module>configure-maven-sqlite</module>
+		<module>configure-maven-cache</module>
 	</modules>
 </project>

@@ -11,7 +11,8 @@
 	<packaging>pom</packaging>
 	<name>configure-maven-apollo</name>
 	<properties>
-		<apollo.client.version>1.6.0</apollo.client.version>
+		<apollo.version>1.6.0</apollo.version>
+		<snakeyaml.version>1.26</snakeyaml.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -19,8 +20,21 @@
 			<dependency>
 				<groupId>com.ctrip.framework.apollo</groupId>
 				<artifactId>apollo-client</artifactId>
-				<version>${apollo.client.version}</version>
+				<version>${apollo.version}</version>
 			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.ctrip.framework.apollo/apollo-core -->
+			<dependency>
+				<groupId>com.ctrip.framework.apollo</groupId>
+				<artifactId>apollo-core</artifactId>
+				<version>${apollo.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/org.yaml/snakeyaml -->
+			<dependency>
+				<groupId>org.yaml</groupId>
+				<artifactId>snakeyaml</artifactId>
+				<version>${snakeyaml.version}</version>
+			</dependency>
+
 		</dependencies>
 	</dependencyManagement>
 </project>

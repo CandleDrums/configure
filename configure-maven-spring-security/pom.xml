@@ -12,8 +12,9 @@
 	<name>configure-maven-spring-security</name>
 	<properties>
 		<spring.security.version>5.3.3.RELEASE</spring.security.version>
-		<spring.security.oauth2.version>2.5.0.RELEASE</spring.security.oauth2.version>
-		<spring.security.oauth2.autoconfigure.version>2.3.1.RELEASE</spring.security.oauth2.autoconfigure.version>
+		<spring.security.jwt.version>1.1.1.RELEASE</spring.security.jwt.version>
+		<spring.security.rsa.version>1.0.9.RELEASE</spring.security.rsa.version>
+		<spring.security.oauth2.version>2.3.1.RELEASE</spring.security.oauth2.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -47,17 +48,48 @@
 				<artifactId>spring-security-test</artifactId>
 				<version>${spring.security.version}</version>
 			</dependency>
-			<!-- https://mvnrepository.com/artifact/org.springframework.security.oauth/spring-security-oauth2 -->
+			<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-openid -->
 			<dependency>
-				<groupId>org.springframework.security.oauth</groupId>
-				<artifactId>spring-security-oauth2</artifactId>
-				<version>${spring.security.oauth2.version}</version>
+				<groupId>org.springframework.security</groupId>
+				<artifactId>spring-security-openid</artifactId>
+				<version>${spring.security.version}</version>
 			</dependency>
-			<!-- https://mvnrepository.com/artifact/org.springframework.security.oauth.boot/spring-security-oauth2-autoconfigure -->
+			<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-messaging -->
 			<dependency>
-				<groupId>org.springframework.security.oauth.boot</groupId>
-				<artifactId>spring-security-oauth2-autoconfigure</artifactId>
-				<version>${spring.security.oauth2.autoconfigure.version}</version>
+				<groupId>org.springframework.security</groupId>
+				<artifactId>spring-security-messaging</artifactId>
+				<version>${spring.security.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-data -->
+			<dependency>
+				<groupId>org.springframework.security</groupId>
+				<artifactId>spring-security-data</artifactId>
+				<version>${spring.security.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-jwt -->
+			<dependency>
+				<groupId>org.springframework.security</groupId>
+				<artifactId>spring-security-jwt</artifactId>
+				<version>${spring.security.jwt.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-rsa -->
+			<dependency>
+				<groupId>org.springframework.security</groupId>
+				<artifactId>spring-security-rsa</artifactId>
+				<version>${spring.security.rsa.version}</version>
+			</dependency>
+
+			<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-oauth2-core -->
+			<dependency>
+				<groupId>org.springframework.security</groupId>
+				<artifactId>spring-security-oauth2-core</artifactId>
+				<version>${spring.security.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-oauth2-resource-server -->
+			<dependency>
+				<groupId>org.springframework.security</groupId>
+				<artifactId>spring-security-oauth2-resource-server</artifactId>
+				<version>${spring.security.version}</version>
 			</dependency>
 			<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-oauth2-jose -->
 			<dependency>
@@ -71,18 +103,25 @@
 				<artifactId>spring-security-oauth2-client</artifactId>
 				<version>${spring.security.version}</version>
 			</dependency>
-			<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-oauth2-resource-server -->
+			<!-- https://mvnrepository.com/artifact/org.springframework.security.oauth.boot/spring-security-oauth2-autoconfigure -->
 			<dependency>
-				<groupId>org.springframework.security</groupId>
-				<artifactId>spring-security-oauth2-resource-server</artifactId>
-				<version>${spring.security.version}</version>
+				<groupId>org.springframework.security.oauth.boot</groupId>
+				<artifactId>spring-security-oauth2-autoconfigure</artifactId>
+				<version>${spring.security.oauth2.version}</version>
 			</dependency>
-			<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-oauth2-core -->
+			<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-oauth2-client -->
 			<dependency>
-				<groupId>org.springframework.security</groupId>
-				<artifactId>spring-security-oauth2-core</artifactId>
-				<version>${spring.security.version}</version>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-oauth2-client</artifactId>
+				<version>${spring.security.oauth2.version}</version>
 			</dependency>
+			<!-- https://mvnrepository.com/artifact/org.springframework.security.oauth/spring-security-oauth2 -->
+			<dependency>
+				<groupId>org.springframework.security.oauth</groupId>
+				<artifactId>spring-security-oauth2</artifactId>
+				<version>2.5.0.RELEASE</version>
+			</dependency>
+
 		</dependencies>
 	</dependencyManagement>
 </project>

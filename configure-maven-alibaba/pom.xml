@@ -12,6 +12,10 @@
 	<name>configure-maven-alibaba</name>
 	<properties>
 		<fastjson.version>1.2.62</fastjson.version>
+		<aliyun.java.sdk.dysmsapi.version>2.1.0</aliyun.java.sdk.dysmsapi.version>
+		<aliyun.java.sdk.core.version>4.5.2</aliyun.java.sdk.core.version>
+		<aliyun.sdk.oss.version>3.10.2</aliyun.sdk.oss.version>
+		<aliyun.sdk.oss.client.version>2.0.1</aliyun.sdk.oss.client.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -19,6 +23,30 @@
 				<groupId>com.alibaba</groupId>
 				<artifactId>fastjson</artifactId>
 				<version>${fastjson.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.aliyun/aliyun-java-sdk-core -->
+			<dependency>
+				<groupId>com.aliyun</groupId>
+				<artifactId>aliyun-java-sdk-core</artifactId>
+				<version>${aliyun.java.sdk.core.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.aliyun.oss/aliyun-sdk-oss -->
+			<dependency>
+				<groupId>com.aliyun.oss</groupId>
+				<artifactId>aliyun-sdk-oss</artifactId>
+				<version>${aliyun.sdk.oss.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.aliyun/oss-client -->
+			<dependency>
+				<groupId>com.aliyun</groupId>
+				<artifactId>oss-client</artifactId>
+				<version>${aliyun.sdk.oss.client.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.aliyun/aliyun-java-sdk-dysmsapi -->
+			<dependency>
+				<groupId>com.aliyun</groupId>
+				<artifactId>aliyun-java-sdk-dysmsapi</artifactId>
+				<version>${aliyun.java.sdk.dysmsapi.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>

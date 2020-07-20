@@ -16,6 +16,7 @@
 		<dozer.version>5.5.1</dozer.version>
 		<reflections.spring.version>0.9.9-RC1</reflections.spring.version>
 		<reflections.version>0.9.11</reflections.version>
+		<maven.invoker.version>3.0.1</maven.invoker.version>
 	</properties>
 
 	<dependencyManagement>
@@ -54,6 +55,12 @@
 				<groupId>org.reflections</groupId>
 				<artifactId>reflections-maven</artifactId>
 				<version>${reflections.spring.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/org.apache.maven.shared/maven-invoker -->
+			<dependency>
+				<groupId>org.apache.maven.shared</groupId>
+				<artifactId>maven-invoker</artifactId>
+				<version>${maven.invoker.version}</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>

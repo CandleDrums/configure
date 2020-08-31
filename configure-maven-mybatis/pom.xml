@@ -19,6 +19,7 @@
 		<mybatisplus.spring.boot.starter.version>1.0.5</mybatisplus.spring.boot.starter.version>
 		<mapper.sbs.version>1.2.4</mapper.sbs.version>
 		<mybatis.plus.boot.starter.version>3.2.0</mybatis.plus.boot.starter.version>
+		<mybatis.generator.core.version>1.4.0</mybatis.generator.core.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -57,7 +58,12 @@
 				<artifactId>mybatis-plus-boot-starter</artifactId>
 				<version>${mybatis.plus.boot.starter.version}</version>
 			</dependency>
-
+			<!-- https://mvnrepository.com/artifact/org.mybatis.generator/mybatis-generator-core -->
+			<dependency>
+				<groupId>org.mybatis.generator</groupId>
+				<artifactId>mybatis-generator-core</artifactId>
+				<version>${mybatis.generator.core.version}</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 </project>

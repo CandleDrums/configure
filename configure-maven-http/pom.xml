@@ -16,7 +16,7 @@
 		<jetty.version>6.1.26</jetty.version>
 		<netty.version>3.2.5.Final</netty.version>
 		<hessian.version>4.0.7</hessian.version>
-		<xstream.version>1.4.11.1</xstream.version>
+		<xstream.version>1.4.15</xstream.version>
 		<grizzly.version>2.1.4</grizzly.version>
 		<okhttp.version>4.3.1</okhttp.version>
 	</properties>

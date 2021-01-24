@@ -12,7 +12,7 @@
 	<name>configure-maven-spring-boot</name>
 	<!-- 版本配置 -->
 	<properties>
-		<spring.boot.version>2.2.2.RELEASE</spring.boot.version>
+		<spring.boot.version>2.2.5.RELEASE</spring.boot.version>
 	</properties>
 
 	<dependencyManagement>

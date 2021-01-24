@@ -12,7 +12,7 @@
 	<name>configure-maven-spring-cloud</name>
 	<!-- 版本配置 -->
 	<properties>
-		<spring.cloud.config.version>2.2.6.RELEASE</spring.cloud.config.version>
+		<spring.cloud.config.version>2.2.5.RELEASE</spring.cloud.config.version>
 	</properties>
 
 	<dependencyManagement>

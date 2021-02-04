@@ -75,7 +75,13 @@
 			<!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-openfeign -->
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-starter-feign</artifactId>
+				<artifactId>spring-cloud-starter-openfeign</artifactId>
+				<version>${spring.cloud.config.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-consul-discovery -->
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-starter-consul-discovery</artifactId>
 				<version>${spring.cloud.config.version}</version>
 			</dependency>
 			<!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-openfeign-core -->

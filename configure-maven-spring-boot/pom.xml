@@ -319,18 +319,7 @@
 				<artifactId>spring-boot-starter-test</artifactId>
 				<version>${spring.boot.version}</version>
 			</dependency>
-			<!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-openfeign -->
-			<dependency>
-				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-starter-openfeign</artifactId>
-				<version>${spring.boot.version}</version>
-			</dependency>
-			<!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-consul-discovery -->
-			<dependency>
-				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-starter-consul-discovery</artifactId>
-				<version>${spring.boot.version}</version>
-			</dependency>
+			
 
 		</dependencies>
 	</dependencyManagement>

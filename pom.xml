@@ -49,5 +49,6 @@
 		<module>configure-maven-cache</module>
 		<module>configure-maven-apollo</module>
 		<module>configure-maven-spring-security</module>
+		<module>configure-maven-micrometer</module>
 	</modules>
 </project>

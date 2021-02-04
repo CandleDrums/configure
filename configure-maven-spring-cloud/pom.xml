@@ -12,7 +12,7 @@
 	<name>configure-maven-spring-cloud</name>
 	<!-- 版本配置 -->
 	<properties>
-		<spring.cloud.config.version>2.2.5.RELEASE</spring.cloud.config.version>
+		<spring.cloud.config.version>3.0.1</spring.cloud.config.version>
 	</properties>
 
 	<dependencyManagement>
@@ -96,14 +96,13 @@
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
-				<version>1.4.1.RELEASE</version>
+				<version>2.2.6.RELEASE</version>
 			</dependency>
-
 			<!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-netflix-core -->
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-netflix-core</artifactId>
-				<version>${spring.cloud.config.version}</version>
+				<version>2.2.6.RELEASE</version>
 				<exclusions>
 					<exclusion>
 						<groupId>org.springframework.boot</groupId>
@@ -150,18 +149,26 @@
 				<artifactId>spring-cloud-starter-sleuth</artifactId>
 				<version>${spring.cloud.config.version}</version>
 			</dependency>
+			<!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-sleuth-zipkin -->
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-sleuth-zipkin</artifactId>
+				<version>${spring.cloud.config.version}</version>
+			</dependency>
+
 			<!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-netflix-hystrix-dashboard -->
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-starter-netflix-hystrix-dashboard</artifactId>
-				<version>${spring.cloud.config.version}</version>
+				<version>2.2.6.RELEASE</version>
 			</dependency>
 			<!-- https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-netflix-hystrix -->
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
-				<version>${spring.cloud.config.version}</version>
+				<version>2.2.6.RELEASE</version>
 			</dependency>
+
 
 		</dependencies>
 	</dependencyManagement>

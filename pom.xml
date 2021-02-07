@@ -26,7 +26,6 @@
 		<module>configure-maven-jackson</module>
 		<module>configure-maven-mongodb</module>
 		<module>configure-maven-sun</module>
-		<module>configure-maven-spring-data</module>
 		<module>configure-maven-spring-boot</module>
 		<module>configure-maven-spring-session</module>
 		<module>configure-maven-hikari</module>

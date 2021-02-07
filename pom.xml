@@ -50,5 +50,6 @@
 		<module>configure-maven-apollo</module>
 		<module>configure-maven-spring-security</module>
 		<module>configure-maven-micrometer</module>
+		<module>configure-maven-zipkin</module>
 	</modules>
 </project>

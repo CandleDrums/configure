@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
@@ -11,7 +12,8 @@
 	<name>configure-maven-redis</name>
 	<!-- 版本配置 -->
 	<properties>
-		<jedis.version>2.9.0</jedis.version>
+		<jedis.version>3.5.1</jedis.version>
+		<lettuce.version>6.0.2.RELEASE</lettuce.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -21,6 +23,13 @@
 				<artifactId>jedis</artifactId>
 				<version>${jedis.version}</version>
 			</dependency>
+			<!-- https://mvnrepository.com/artifact/io.lettuce/lettuce-core -->
+			<dependency>
+				<groupId>io.lettuce</groupId>
+				<artifactId>lettuce-core</artifactId>
+				<version>${lettuce.version}</version>
+			</dependency>
+
 		</dependencies>
 	</dependencyManagement>
 </project>

@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
@@ -12,7 +13,7 @@
 	<description>Apache Commons</description>
 	<!-- 版本配置 -->
 	<properties>
-		<commons.io.version>2.5</commons.io.version>
+		<commons.io.version>2.8.0</commons.io.version>
 		<commons.logging.version>1.2</commons.logging.version>
 		<commons.lang3.version>3.4</commons.lang3.version>
 		<commons.codec.version>1.10</commons.codec.version>
@@ -30,6 +31,7 @@
 		<commons.csv.version>1.4</commons.csv.version>
 		<org.apache.httpcomponents.version>4.5.2</org.apache.httpcomponents.version>
 		<org.apache.httpcomponents.core.version>4.4.5</org.apache.httpcomponents.core.version>
+		<commons.pool2.version>2.9.0</commons.pool2.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -141,6 +143,13 @@
 				<artifactId>commons-csv</artifactId>
 				<version>${commons.csv.version}</version>
 			</dependency>
+			<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-pool2 -->
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-pool2</artifactId>
+				<version>${commons.pool2.version}</version>
+			</dependency>
+
 		</dependencies>
 	</dependencyManagement>
 </project>

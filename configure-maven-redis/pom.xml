@@ -12,23 +12,28 @@
 	<name>configure-maven-redis</name>
 	<!-- 版本配置 -->
 	<properties>
-		<jedis.version>3.5.1</jedis.version>
-		<lettuce.version>6.0.2.RELEASE</lettuce.version>
-		<spring.data.redis.version>2.4.3</spring.data.redis.version>
+		<redisson.version>3.15.3</redisson.version>
+		<spring.data.redis.version>2.4.7</spring.data.redis.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
-			<!-- https://mvnrepository.com/artifact/redis.clients/jedis -->
+			<!-- https://mvnrepository.com/artifact/org.redisson/redisson -->
 			<dependency>
-				<groupId>redis.clients</groupId>
-				<artifactId>jedis</artifactId>
-				<version>${jedis.version}</version>
+				<groupId>org.redisson</groupId>
+				<artifactId>redisson</artifactId>
+				<version>${redisson.version}</version>
 			</dependency>
-			<!-- https://mvnrepository.com/artifact/io.lettuce/lettuce-core -->
+			<!-- https://mvnrepository.com/artifact/org.redisson/redisson-spring-boot-starter -->
 			<dependency>
-				<groupId>io.lettuce</groupId>
-				<artifactId>lettuce-core</artifactId>
-				<version>${lettuce.version}</version>
+				<groupId>org.redisson</groupId>
+				<artifactId>redisson-spring-boot-starter</artifactId>
+				<version>${redisson.version}</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/org.redisson/redisson-spring-data-24 -->
+			<dependency>
+				<groupId>org.redisson</groupId>
+				<artifactId>redisson-spring-data-24</artifactId>
+				<version>${redisson.version}</version>
 			</dependency>
 			<!-- https://mvnrepository.com/artifact/org.springframework.data/spring-data-redis -->
 			<dependency>
@@ -36,7 +41,6 @@
 				<artifactId>spring-data-redis</artifactId>
 				<version>${spring.data.redis.version}</version>
 			</dependency>
-
 		</dependencies>
 	</dependencyManagement>
 </project>

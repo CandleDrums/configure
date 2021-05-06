@@ -12,11 +12,17 @@
 	<name>configure-maven-redis</name>
 	<!-- 版本配置 -->
 	<properties>
+		<jedis.version>3.5.1</jedis.version>
 		<redisson.version>3.15.3</redisson.version>
 		<spring.data.redis.version>2.4.7</spring.data.redis.version>
 	</properties>
 	<dependencyManagement>
-		<dependencies>
+		<dependencies>			<!-- https://mvnrepository.com/artifact/redis.clients/jedis -->
+			<dependency>
+				<groupId>redis.clients</groupId>
+				<artifactId>jedis</artifactId>
+				<version>${jedis.version}</version>
+			</dependency>
 			<!-- https://mvnrepository.com/artifact/org.redisson/redisson -->
 			<dependency>
 				<groupId>org.redisson</groupId>

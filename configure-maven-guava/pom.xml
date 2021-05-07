@@ -12,7 +12,7 @@
 	<name>configure-maven-guava</name>
 	<!-- 版本配置 -->
 	<properties>
-		<guava.version>26.0-jre</guava.version>
+		<guava.version>29.0-jre</guava.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>

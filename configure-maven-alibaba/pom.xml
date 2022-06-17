@@ -11,7 +11,7 @@
 	<packaging>pom</packaging>
 	<name>configure-maven-alibaba</name>
 	<properties>
-		<fastjson.version>1.2.62</fastjson.version>
+		<fastjson.version>1.2.83</fastjson.version>
 		<aliyun.java.sdk.dysmsapi.version>2.1.0</aliyun.java.sdk.dysmsapi.version>
 		<aliyun.java.sdk.core.version>4.5.2</aliyun.java.sdk.core.version>
 		<aliyun.sdk.oss.version>3.10.2</aliyun.sdk.oss.version>

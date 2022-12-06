@@ -22,7 +22,7 @@
 		<commons.collections4.version>4.1</commons.collections4.version>
 		<commons.compress.version>1.20</commons.compress.version>
 		<commons.math3.version>3.6.1</commons.math3.version>
-		<commons.net.version>3.5</commons.net.version>
+		<commons.net.version>3.9.0</commons.net.version>
 		<commons.validator.version>1.5.1</commons.validator.version>
 		<commons.logging.api.version>1.1</commons.logging.api.version>
 		<commons.beanutils.core.version>1.8.3</commons.beanutils.core.version>

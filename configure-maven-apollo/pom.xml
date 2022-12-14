@@ -12,7 +12,7 @@
 	<name>configure-maven-apollo</name>
 	<properties>
 		<apollo.version>1.6.0</apollo.version>
-		<snakeyaml.version>1.26</snakeyaml.version>
+		<snakeyaml.version>1.32</snakeyaml.version>
 	</properties>
 	<dependencyManagement>
 		<dependencies>
